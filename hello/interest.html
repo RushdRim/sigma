@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <title>Interests</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            padding: 40px;
+        }
+
+        .title {
+            color: #04e5f9;
+            font-size: 70px;
+            line-height: 98px;
+            font-family: 'Libre Baskerville', serif;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            width: 90%;
+            background-color: transparent;
+            margin: 40px auto;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-kerning: none;
+        }
+
+        .title span {
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .cluster {
+            position: relative;
+            width: 100%;
+            max-width: 874px;
+            height: 792px;
+            margin: 100px auto;
+            background-color: transparent;
+            padding-bottom: 100px;
+        }
+
+        .clusterPieces {
+            position: absolute;
+        }
+
+        .circle {
+            width: 100%;
+            max-width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            background-color: #04e5f9;
+            left: 214px;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .dotsBlue {
+            width: 100%;
+            height: auto;
+            max-width: 494px;
+            max-height: 434px;
+            z-index: 3;
+            left: 0;
+            top: 80px;
+        }
+
+        .owlHorned {
+            width: 100%;
+            height: auto;
+            max-width: 450px;
+            max-height: 700px;
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .caption {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            color: #04e5f9;
+            text-align: right;
+        }
+
+        .caption span {
+            color: #ffffff;
+        }
+
+        #wrappie {
+            width: 960px;
+            height: 792px;
+            margin: 0 auto;
+        }
+
+
+        .dotsWhite {
+            width: 100%;
+            height: auto;
+            max-width: 310px;
+            max-height: 588px;
+            z-index: 2;
+            left: 0;
+            top: 400px;
+        }
+
+        .owlBurrowing {
+            width: 100%;
+            height: auto;
+            max-width: 674px;
+            max-height: 700px;
+            top: 142px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .triangle {
+            width: 100%;
+            max-width: 448px;
+            height: 446px;
+            left: -28px;
+            top: 0;
+            z-index: 3;
+        }
+
+        .clusterBurrowing {
+            max-width: 874px;
+            height: 996px;
+        }
+
+        .captionBurrowing {}
+
+        .spcr300 {
+            padding-bottom: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <body data-barba="wrapper">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+    
+        <main data-barba="container" data-barba-namespace="interest-section">
+    <section>
+        <div class="title titleGreathorned"><span>Mohamed Rushd Rimzan </span>moved to Malaysia at the age of 8 </div>
+    </section>
+
+
+    <section class="cluster clusterGreat">
+        <div class="circle clusterPieces"></div>
+
+        <div class="owlHorned clusterPieces"><img
+                src="banner.png" />
+            <div class="caption"><span>/01</span> Me</div>
+        </div>
+
+        <img class="dotsBlue clusterPieces"
+            src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/dots_blue_494x434.svg" />
+    </section>
+
+    <section>
+        <div class="title titleBurrowing"><span>Coding</span> I have always been interested in coding since i had extra classes from Dignity for children foundation. It was a good journey as i learnt many new stuff</div>
+    </section>
+
+
+    <section class="cluster clusterBurrowing">
+        <img class="clusterPieces triangle"
+            src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/triangle_448x446.svg">
+
+        <div class="clusterPieces owlBurrowing"><img
+                src="coding.jpg">
+            <div class="caption captionBurrowing"><span>/02</span> Coding</div>
+        </div>
+
+        <img class="clusterPieces dotsWhite"
+            src="https://www.micelistudios.com/sandbox/scrolltrigger/imgs/dots_white_310x588.svg">
+
+    </section>
+
+    <section class="spcr300"></section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="interest.html">My interest</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+    </div>
+</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="animation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</html>
